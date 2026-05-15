@@ -1,0 +1,13 @@
+### Criar uma venda
+POST http://localhost:8080/api/v1/vendas
+Content-Type: application/json
+
+{
+  "dataVenda": "2024-03-15",
+  "valor": 1500.00,
+  "vendedorId": 1,
+  "vendedorNome": "Carlos Silva"
+}
+
+### Resumo de vendedores
+GET http://localhost:8080/api/v1/vendedores/resumo?dataInicio=2024-01-01&dataFim=2024-12-31
